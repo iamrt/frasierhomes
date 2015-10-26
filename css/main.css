@@ -96,88 +96,179 @@ textarea {
    ========================================================================== */
 
 html body {
-    background-color: black;
-
-    /*background-color: #ADADAD;*/
+    background-color: white;
+    overflow-y: scroll;
 }
 
 .header {
     width: 100%;
-    height: 300px;
-    background-color: black;
-    opacity: .7;
-    position: relative; 
-    border-bottom: 1px solid #AE8F13;
-}
-
-div.with-border {
-    
-
-}
-
-.header img {
-    display: inline;
+    height: 200px;
+    border-bottom: 1px solid #B04A06;
 }
 
 #contact {
-    top: -140px;
-    color: white;
-    opacity: 1;
+    padding-top: 60px;
+    color: black;
+    font-size: 1.3em;
     font-family: 'Strait', sans-serif;
-}
-
-#contact:first-line {
-    font-family: "pinyon script";
-    font-size: 4em;
-    color: #F9CD1B;
+    text-align: center;
 }
 
 aside {
-    border-right: 1px solid #AE8F13;
+    border-right: 1px solid #B04A06;
     margin-top: 25px;
 }
 
 nav {
     float: left;
-    padding-right: 20px;
+    padding-right: 30px;
     width: 20%;
 }
 
+/********* Mobile Button *********/
+
+div.bg-color {
+    margin-right: 5px;
+    width: 100%;
+    height: 35px;
+    z-index: 2;
+    background-color: white;
+    padding: 0 15px;
+}
+
+span.icon-bar {
+    background-color: #fff;
+}
+
+button#mobile-menu {
+    display: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    color: #346f91;
+    border-radius: 4px;
+    border: 1px solid #B04A06;
+    background-color: #B04A06;
+}
+
+button.navbar-toggle {
+    margin: 0;
+    float: right;
+}
+
+.change-bg {
+    background-color: white !important;
+}
+
+.change-icon {
+    background-color: black !important;
+}
+
+/********* End of Mobile Button *********/
+
 nav ul {
     list-style: none;
-    
 
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #AE840C;
+    color: #B04A06;
     font-family: 'Strait', sans-serif;
     font-size: 1.4em;
-
-
 }
 
 nav ul li a:hover {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 nav ul li {
-    padding: 5px 10px;
-    
+    padding: 15px 20px; 
 }
 
+div.content {
+    margin-top: 25px;
+    padding-left: 20px;
+    line-height: 1.6em;
+}
 
-@media screen and (max-width: 992px) {
+div.content h2 {
+    margin-top: 0;
+    text-align: center;
+    border-top: 1px solid #B04A06;
+    border-bottom: 1px solid #B04A06;
+}
+
+div.content img {
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+/************************************************************** Responsive Styling **************************************************************/
+
+@media screen and (max-width: 768px) {
     .header {
-        height: 200px;
-    
+        height: 250px;
+        border-bottom: none;
     }
 
     #contact {
-        top: -120px;
+        padding-top: 15px;
     }
+
+    div.bg-color {
+        min-width: 100%;
+    }
+
+    div.content {
+        display: none;
+    }
+
+/********* Mobile Button specific *********/
+
+    button#mobile-menu {
+        padding: 10px 20px;
+        display: block;
+    }
+
+    span.xs-center {
+        margin: 0 auto;
+    }
+
+    .header img {
+        max-width: 420px;
+    }
+
+    aside {
+        border: none;
+        float: right;
+        margin: 0;
+        min-width: 50%;
+    }
+
+    nav ul {
+        min-width: 100%;
+        display: none;
+        margin: 0;
+
+    }
+
+    nav ul li {
+        padding: 15px 0;
+        margin-right: auto;
+        background-color: black;
+    }
+
+    nav ul li a {
+        text-align: right;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+
 }
 
 
