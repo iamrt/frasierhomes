@@ -133,9 +133,8 @@ div.bg-color {
     margin-right: 5px;
     width: 100%;
     z-index: 2;
-    background-color: white;
-    padding: 0 15px;
     display: none;
+    height: 36px;
 }
 
 span.icon-bar {
@@ -150,11 +149,13 @@ button#mobile-menu {
     border-radius: 4px;
     border: 1px solid #B04A06;
     background-color: #B04A06;
+    margin-bottom: 1px;
+    margin-left: -15px;
 }
 
 button.navbar-toggle {
     margin: 0;
-    float: right;
+    float: left;
 }
 
 .change-bg {
@@ -234,8 +235,7 @@ div.content img {
     }
 
     #contact {
-        padding-top: 15px;
-        margin-top: 45px;
+        padding-top: 15px !important;
     }
 
     div.bg-color {
@@ -271,7 +271,7 @@ div.content img {
         margin-top: 35px;
         position: absolute;
         z-index: 2;
-        background-color: rgba(240,240,240,0.5);
+        background-color: rgba(240,240,240,0.8);
     }
 
     nav ul li {
@@ -291,7 +291,9 @@ div.content img {
 
 
 @media screen and (max-width: 992px) {
-
+    #contact {
+        padding-top: 60px;
+    }
 
 }
 
