@@ -9,4 +9,14 @@ $(function() {
 	});
 
 
+/***************Footer to Bottom***************/
+	
+	$docHeight = $(document).height();
+	$winHeight = $(window).height();
+
+	if ($docHeight > $winHeight) {
+		$('.wrapper').css('min-height', $docHeight);
+	}	else {
+		$('.wrapper').css('min-height', $winHeight);
+	};
 });

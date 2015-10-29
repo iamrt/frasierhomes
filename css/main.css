@@ -104,6 +104,21 @@ html body {
     position: relative;
 }
 
+/******************* Sticky Footer Piece 1 of 2 *******************/
+
+div.wrapper {
+    min-height: 100%;
+    margin-bottom: -20px;
+}
+
+.wrapper:after {
+    content: "";
+    display: block;
+    height: 20px;
+}
+
+/******************* End of Sticky Footer Piece 1 of 2 *******************/
+
 .header {
     width: 100%;
     height: 200px;
@@ -118,13 +133,12 @@ html body {
     text-align: center;
 }
 
+
+
 aside {
     border-right: 1px solid #B04A06;
     margin-top: 25px;
     padding-right: 25px;
-}
-
-nav {
 }
 
 /********* Mobile Button *********/
@@ -224,6 +238,18 @@ div.content img {
 .centered {
     margin-left: auto;
     margin-right: auto;
+}
+
+/******************* Set Footer Height to the -height of Footer Piece 1 *******************/
+
+footer#footer {
+    width: 100%;
+    background-color: black;
+    opacity: .5;
+    font-size: 1em;
+    text-align: center;
+    color: white;
+    height:20px;
 }
 
 /************************************************************** Responsive Styling **************************************************************/
