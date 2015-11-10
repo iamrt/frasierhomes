@@ -8,5 +8,9 @@ $(function() {
 		$('.icon-bar').toggleClass('change-icon');
 	});
 
+	$img = $('.test-pic')
+	$pHeight = $('.testimony').height()
+
+
 
 });
