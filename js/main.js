@@ -12,6 +12,12 @@ $(function() {
 	$pHeight = $('.testimony').height()
 
 
+/*************** Same height for all imgs in Testimonies **************/
+
+	$firstHeight = $('#first-pic').height()
+	$testimonyImg = $('.testimony > a > img')
+
+	$testimonyImg.css("height", $firstHeight);
 
 /***************Footer to Bottom***************/
 	
