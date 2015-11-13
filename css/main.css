@@ -225,7 +225,7 @@ div.content img {
 }
 
 .mobile-content {
-    margin-top: 25px;
+    margin: 25px 0;
     padding-top: 30px;
     background-color: rgba(5, 5, 5, 0.8);
     border-radius: 8px;
@@ -234,6 +234,7 @@ div.content img {
 
 .mobile-content img {
     margin-bottom: 30px;
+    cursor: pointer;
 }
 
 .centered {
@@ -244,6 +245,10 @@ div.content img {
 .content-test {
     text-align: center;
     font-family: 'Strait', sans-serif;
+}
+
+.content-test h2 {
+    text-align: center;
 }
 
 .testimony {
@@ -269,6 +274,26 @@ div.content img {
     background-color: #CA9D2C;
     width: 100%;
     margin-top: 0;
+}
+
+.projects h2 {
+    text-align: center;
+    font-family: 'Strait', sans-serif;
+    font-size: 2.2em;
+}
+
+.project {
+    padding: 5px;
+    margin: 15px 0;
+}
+
+.project h2 {
+    font-size: 2em;
+}
+
+.project img {
+    margin: 15px 0;
+    cursor: pointer;
 }
 
 

@@ -19,6 +19,13 @@ $(function() {
 
 	$testimonyImg.css("height", $firstHeight);
 
+/*************** Same height for all imgs in Projects **************/
+
+	// $imgHeight = $('#firstImg').height()
+	// $projImgs = $(".project > img")
+
+	$(".project > img").css("height", $('#firstImg').height())
+
 /***************Footer to Bottom***************/
 	
 	$docHeight = $(document).height();

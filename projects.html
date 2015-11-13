@@ -7,11 +7,13 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Pinyon+Script' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Strait' rel='stylesheet' type='text/css'>
 
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/main.css">
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -22,28 +24,57 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <div class="header">
-        	<span class="logo header-box">Frasier Homes</span>
-        	<div class="header-contact header-box"><p>Frasier Homes<br />(918)907-1212<br />brett@frasierhomesonline.com</p></div>
-        </div>
-
         <div class="container">
-        	<nav>
-        		<ul>
-        			<li> <a href="#">Home</a></li>
-        			<li> <a href="about.html">About</a></li>
-        			<li> <a href="#">Projects</a></li>
-        			<li> <a href="#">Testimonies</a></li>
-        		</ul>
-        	</nav>
+            <div class="wrapper">
+            <div class="header col-sm-12">
+                <img src="img/logo.svg" alt="Frasier Homes" class="img-responsive col-sm-6 col-md-4 col-lg-3 center-block">
+                <p class="col-xs-12 col-sm-3 col-sm-offset-3 col-md-5 col-md-offset-3 col-lg-offset-4" id="contact">123 Random Dr.<br />Bartlesville, OK<br />(918)555-5555</p>
+            </div>
+            <aside class="col-xs-1 col-md-offset-0 col-md-3">
+            
+              <button id="mobile-menu" class="navbar-toggle bg-color top-left">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
 
-        	<div id="projects">
-                <img src="img/temp-before.jpg" alt="Before" class="before">
-                <img src="img/temp-after.jpg" alt="After" class="after">
-                <img src="img/temp-before.jpg" alt="" class="before-half">
-                <img src="img/temp-after.jpg" alt="" class="after-half">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="testimonies.html">Testimonies</a></li>
+                </ul>
+            </nav>
+            </aside>
+            <div class="projects col-sm-12 col-md-9">
+                <h2>Projects</h2>
+                <div class="project col-sm-4"><h2>Project #1</h2><a href="#" data-toggle="modal" target=""></a><img src="img/kitchen.jpg" class="col-sm-12" id="firstImg" alt="" data-toggle="modal" target="#galleryModal"></div>
+                <div class="project col-sm-4"><h2>Project #2</h2><a href="#" data-toggle="modal" target=""></a><img src="img/bathroom1.jpg" class="col-sm-12" alt=""></div>
+                <div class="project col-sm-4"><h2>Project #3</h2><a href="#" data-toggle="modal" target=""></a><img src="img/bedroom.jpg" class="col-sm-12" alt=""></div>
+            </div>
+            <!-- Modal -->
+            <div class="modal fade" id="galleryModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                  </div>
+                  <div class="modal-body">
+                    ...
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
             </div>
         </div>
+
+        <footer id="footer">© RanceTurley.com</footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
